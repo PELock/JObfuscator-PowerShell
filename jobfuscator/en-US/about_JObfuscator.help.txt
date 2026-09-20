@@ -1,0 +1,26 @@
+TOPIC
+    about_JObfuscator
+
+SHORT DESCRIPTION
+    PowerShell Web API client for JObfuscator.
+
+LONG DESCRIPTION
+    JObfuscator talks to https://www.pelock.com/api/jobfuscator/v1
+    and exposes the same PostRequest flag surface as the PHP SDK.
+
+    Import the module, then either:
+
+        using module JObfuscator
+        $client = [JObfuscator]::new('YOUR-KEY')
+
+    or:
+
+        Import-Module JObfuscator
+        $client = New-JObfuscator -ApiKey 'YOUR-KEY'
+
+    Most strategy flags default to true. split_strings defaults to false.
+
+    Project page: https://www.pelock.com/products/jobfuscator
+
+SEE ALSO
+    New-JObfuscator
